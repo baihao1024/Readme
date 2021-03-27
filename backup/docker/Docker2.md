@@ -41,7 +41,7 @@
 	docker run -dit \
 		-v /你想存放的路径/jd1/config:/jd/config `# 配置保存目录，冒号左边请修改为你想存放的路径`\
 		-v /你想存放的路径/jd1/log:/jd/log `# 日志保存目录，冒号左边请修改为你想存放的路径` \
-		-v /你想存放的路径/jd/scripts:/jd/scripts  `# 脚本文件目录，映射脚本文件到安装路径` \
+		-v /你想存放的路径/jd1/scripts:/jd/scripts  `# 脚本文件目录，映射脚本文件到安装路径` \
 	        -p 5679:5678 \
 		-e ENABLE_HANGUP=true \
 		-e ENABLE_WEB_PANEL=true \
